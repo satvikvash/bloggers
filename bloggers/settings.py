@@ -15,13 +15,11 @@ from pathlib import Path,os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-$m9=xidr(1s!12n)kb!r1$bso3o9^c_1w3yvbw@&ga^rre5zii'
+#SECRET_KEY = 'django-insecure-$m9=xidr(1s!12n)kb!r1$bso3o9^c_1w3yvbw@&ga^rre5zii'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
